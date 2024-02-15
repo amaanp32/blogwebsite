@@ -1,0 +1,243 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.4rem;
+}
+ul {
+  list-style: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+nav {
+  padding: 1rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 5px 5px rgb(1 1 1 / 10%);
+  border-radius: 25px;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li {
+  font-size: 1.8rem;
+}
+nav ul li:hover {
+  border-bottom: #46b96c 2px solid;
+}
+nav i {
+  font-size: 2.5rem;
+}
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* section  */
+#hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero_content h1{
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+strong {
+  position: relative;
+}
+
+strong::before {
+  /* Highlight color */
+  background-color: #46b96c;
+
+  content: "";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 60%;
+  left: -2px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-2deg);
+}
+.hero_content h4{
+    font-size: 25px;
+    font-weight: 300;
+}
+.hero_image img{
+    margin-top: 12px;
+    border-radius: 55px;
+    transition: 0.2s ease-in;
+}
+.hero_image img:hover{
+    transform: scale(1.02);
+    transition: 0.2s ease-out;
+}
+/* section  */
+.h_card{
+    display: flex;
+    border: 1px solid #e2e2e2;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px rgb(1 1 1 / 10%);
+    border-radius: 10px;
+}
+.h_card img{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.card_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 3rem;
+    
+}
+.status{
+    display: flex;
+    justify-content: space-between;
+
+}
+.read-btn{
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.read-btn:hover{
+    border-bottom: #46b96c 1px solid;
+    color: #46b96c;
+}
+/* ------section-------------------- */
+.crad_container{
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.vcard{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    max-width: 320px;
+    border: 1px solid #e2e2e2;
+    box-shadow: 5px 5px 5px rgb(1 1 1 / 10%);
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+.vcard:hover{
+    transform: scale(1.03);
+    transition: 0.2s ease-in-out;
+}
+.vcard img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card_wraper{
+    display: flex;
+    justify-content: center;
+}
+/* ----------footer--------- */
+footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    gap: 20px;
+}
+ul li {
+    font-size: 1.8rem;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: 786px){
+    main{
+        max-width: 350px;
+    }
+    nav{
+        justify-content: space-evenly;
+        margin-bottom: 25px;
+        padding-left: 100px;
+    }
+    nav h1{
+        font-size: 18px;
+        text-align: center;
+    }
+    nav ul li {
+        display: none;
+      }
+    #hero{
+        flex-direction: column;
+    }
+    .hero_image img{
+        width: 350px;
+    }
+   .hero_content h1{
+    font-size: 25px;
+   }
+   .h_card{
+    flex-direction: column-reverse;
+   }
+   .crad_container{
+    gap: 20px;
+   }
+}
+
+
+/* ------------------------------------------post page-------------------------------------------------------------- */
+.post hr{
+    margin: 20px auto;
+}
+.post h1{
+    font-size: 3rem;
+}
+.banner_image img{
+    margin-top: 10px;
+    width: 100%;
+}
+.about-author{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 20px;
+}
